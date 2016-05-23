@@ -1,9 +1,8 @@
 package com.offbytwo.jenkins.integration;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import java.io.IOException;
 
+import org.testng.SkipException;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -17,8 +16,8 @@ public class NoExecutorStartedPluginManagerIT extends AbstractJenkinsIntegration
 
     @Test
     public void getPluginsShouldReturn9ForJenkins20() {
-        assertThat(true).isTrue();
-// throw new SkipException("This requirement is not fulfilled.");
+// assertThat(true).isTrue();
+        throw new SkipException("This requirement is not fulfilled.");
     }
 
 }
