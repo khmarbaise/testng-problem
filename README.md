@@ -44,7 +44,8 @@ Results :
 Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
 ```
 
-To see the problem you need to change the code within the following file `NoExecutorStartedPluginManagerIT.java`
+To see the problem you need only to change the branch in git on `failure` branch
+where you see the changed code where the code changed of `NoExecutorStartedPluginManagerIT`
 from this:
 
 
@@ -66,7 +67,8 @@ public void getPluginsShouldReturn9ForJenkins20()
     throw new SkipException("This requirement is not fulfilled.");
 }
 ```
-Do not forget to import the `SkipException` class. The result of this change is the following:
+
+If you run on the `failure` branch you can see the following:
 
 ```
 [INFO] --- maven-failsafe-plugin:2.19.1:integration-test (integration-test) @ testng-problem ---
@@ -101,3 +103,4 @@ Tests run: 14, Failures: 0, Errors: 0, Skipped: 3
 [INFO] 
 ```
 
+The full log files have been checked in also.
