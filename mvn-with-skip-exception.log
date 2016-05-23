@@ -1,0 +1,72 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building testng-problem 2.1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ testng-problem ---
+[INFO] Deleting /Users/kama/ws-git/testng-problem/target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ testng-problem ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ testng-problem ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/kama/ws-git/testng-problem/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ testng-problem ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/kama/ws-git/testng-problem/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ testng-problem ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ testng-problem ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /Users/kama/ws-git/testng-problem/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ testng-problem ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ testng-problem ---
+[INFO] Building jar: /Users/kama/ws-git/testng-problem/target/testng-problem-2.1.0.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.5.1:attach-descriptor (attach-descriptor) @ testng-problem ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:integration-test (integration-test) @ testng-problem ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+Wait until Jenkins is started....done.
+NoExecutorStartedGetComputerSetIT:
+  SUCCESS   getBusyExecutorsShouldReturnZero
+  SUCCESS   getDisplayNameShouldReturnNodes
+  SUCCESS   getTotalExecutorsShouldReturnZero
+  SUCCESS   shouldGetNameOfMasterNode
+NoExecutorStartedGetComputersIT:
+  SUCCESS   getNameShouldReturnMaster
+  SUCCESS   numberOfComputersIsEqualOne
+NoExecutorStartedGetComputersWithDetailsIT:
+  SUCCESS   getExecutorsShouldReturnTwo
+  SUCCESS   getIdleShouldReturnTrue
+  SUCCESS   getJnlpShouldReturnTrue
+  SUCCESS   getLaunchSupportedShouldReturnTrue
+  SUCCESS   getManualLanuchShouldReturnTrue
+NoExecutorStartedPluginManagerIT:
+  SKIPPED ( This requirement is not fulfilled. )   getPluginsShouldReturn9ForJenkins20
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 3.109 sec - in TestSuite
+
+Results :
+
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 3
+
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:verify (integration-test) @ testng-problem ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.203 s
+[INFO] Finished at: 2016-05-23T08:59:53+02:00
+[INFO] Final Memory: 50M/3926M
+[INFO] ------------------------------------------------------------------------

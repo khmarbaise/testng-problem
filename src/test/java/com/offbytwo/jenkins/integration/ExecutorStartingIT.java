@@ -16,7 +16,7 @@ public class ExecutorStartingIT extends AbstractJenkinsIntegrationCase {
     }
 
     @Test
-    public void shouldTriggerJobTest() throws IOException {
+    public void shouldStartTheNode() throws IOException {
         assertThat(true).isTrue();
     }
 
